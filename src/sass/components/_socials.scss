@@ -1,0 +1,22 @@
+.socials {
+  display: inline-flex;
+}
+
+.socials__item:not(:last-child) {
+  margin-right: 9.47px;
+
+  @media screen and (min-width: 1280px) {
+    margin-right: 12px;
+  }
+}
+
+.socials__icon {
+  fill: var(--icon-color);
+
+  transition: fill var(--animation-duration);
+
+  .socials__item:hover &,
+  .socials__item:focus & {
+    fill: var(--icon-color);
+  }
+}
