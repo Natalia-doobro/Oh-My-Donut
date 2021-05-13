@@ -9,6 +9,9 @@
 цвет иконок - #674D40;   #AB816C;  #2E2520;
 текст подсказка - rgba(171, 129, 108, 0.5);
 цвет фона на меню - rgba(254, 243, 228, 0.9);
+для десктопной версии - #FFFFF9
+ховер/фокус для кнопок - #876655;
+нажатие на кнопки - #674D40;
 
 текст силки при наведении - ++++++++
 фон силки при навидении - +++++++
@@ -16,12 +19,15 @@
 */
 :root {
   --body-color: #ffffff;
+  --second-body-color: #fffff9;
   --text-color: #2e2520;
   --subtitle-color: #2e2520;
-  --title-color: ##2e2520;
+  --title-color: #2e2520;
   --button-bg-color: #ab816c;
   --button-text-color: #ffffff;
   --button-close-color: #2e2520;
+  --button-accent-color: #876655;
+  --button-active-color: #674d40;
   --icon-color: #2e2520;
   --placeholder-color: rgba(171, 129, 108, 0.5);
   --bg-menu-color: rgba(254, 243, 228, 0.9);
