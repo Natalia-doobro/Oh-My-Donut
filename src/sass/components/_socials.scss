@@ -1,12 +1,21 @@
-.socials {
+.socials__link {
   display: flex;
-}
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
 
-.socials__item:not(:last-child) {
-  margin-right: 9.47px;
+  transition: background-color var(--animation-duration);
+
+  &:hover,
+  &:focus {
+    background-color: var(--button-bg-color);
+  }
 
   @media screen and (min-width: 1280px) {
-    margin-right: 12px;
+    width: 48px;
+    height: 48px;
   }
 }
 
@@ -15,8 +24,8 @@
 
   transition: fill var(--animation-duration);
 
-  .socials__item:hover &,
-  .socials__item:focus & {
-    fill: var(--icon-color);
+  .socials__link:hover &,
+  .socials__link:focus & {
+    fill: var(--button-text-color);
   }
 }
