@@ -1,1 +1,30 @@
-<!--секция для роботы с Registration (Разработчик:     )-->
+<!--секция для роботы с Registration (Разработчик:  Natalia-doobro   )-->
+<section class="section" id="registration">
+    <div class="container">
+        <div class="Register-rectangle">
+            <h2 class="section__title">Registration</h2>
+
+            <div class="Register">
+                <div class="Register__date">
+                    <p class="section__text">May 23, 11:00 New York</p>
+                    <p class="section__text">$ 699</p>
+                </div>
+
+                <span class="Register__decor-line"></span>
+
+                <form class="register_form" autocomplete="on" novalidate>
+                    <p class="section__text">Apply your personal info for registration</p>
+
+                    <input class="register__input" type="text" name="name" placeholder="Your name" required
+                        pattern="^[A-Za-zА-Яа-яЁё\s]+$" />
+                    <input class="register__input" type="tel" name="phone" placeholder="Phone number"
+                        pattern="[0-9]{10}" />
+                    <input class="register__input" type="email" name="email" placeholder="Email" required />
+
+                    <button type="submit" class="button">Register</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</section>
