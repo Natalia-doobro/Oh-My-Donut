@@ -2,13 +2,13 @@
 
 <header class="header">
   <div class="container">
-    <a class="logo" href="./index.html">
-      <svg class="logo__icon">
-        <use href="./images/icons.svg#icon-logo"></use>
-      </svg>
-    </a>
-    <nav class="menu menu-desktop">
-      <ul class="menu__list list">
+    <nav class="menu">
+      <a class="logo" href="./index.html">
+        <svg class="logo__icon">
+          <use href="./images/icons.svg#icon-logo"></use>
+        </svg>
+      </a>
+      <ul class="menu__list list menu-desktop">
         <li class="menu__item">
           <a class="menu__link link" href="#about">About us</a>
         </li>
@@ -22,31 +22,6 @@
           <a class="menu__link link" href="#contacts">Contacts</a>
         </li>
       </ul>
-    </nav>
-
-    <div class="menu-mobile" id="menu-container" data-menu>
-      <a class="logo" href="./index.html">
-        <svg class="logo__icon">
-          <use href="./images/icons.svg#icon-logo"></use>
-        </svg>
-      </a>
-      <nav class="menu">
-        <ul class="menu__list list">
-          <li class="menu__item">
-            <a class="menu__link link" href="#about">About us</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link link" href="#program">Program</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link link" href="#reviews">Reviews</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link link" href="#contacts">Contacts</a>
-          </li>
-        </ul>
-      </nav>
-
       <button
         class="batton-menu"
         type="button"
@@ -65,6 +40,29 @@
           ></use>
         </svg>
       </button>
+    </nav>
+
+    <div class="menu-mobile" id="menu-container" data-menu>
+      <a class="logo" href="./index.html">
+        <svg class="logo__icon">
+          <use href="./images/icons.svg#icon-logo"></use>
+        </svg>
+      </a>
+
+      <ul class="menu__list list">
+        <li class="menu__item">
+          <a class="menu__link link" href="#about">About us</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link link" href="#program">Program</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link link" href="#reviews">Reviews</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link link" href="#contacts">Contacts</a>
+        </li>
+      </ul>
     </div>
 
     <h1 class="header__title title">Donut Masterclass <br />with the Donut King</h1>
