@@ -1,1 +1,98 @@
-<!--секция для роботы с Header (Разработчик:     )-->
+<!--секция для работы с Header (Разработчик: Vitalii Shulga)-->
+
+<header class="header">
+  <div class="container">
+    <nav class="menu">
+      <a class="logo" href="./index.html">
+        <svg class="logo__icon">
+          <use href="./images/icons.svg#icon-logo"></use>
+        </svg>
+      </a>
+      <ul class="menu__list list menu-desktop">
+        <li class="menu__item">
+          <a class="menu__link link" href="#about">About us</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link link" href="#program">Program</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link link" href="#reviews">Reviews</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link link" href="#contacts">Contacts</a>
+        </li>
+      </ul>
+      <button
+        class="batton-menu"
+        type="button"
+        aria-expanded="false"
+        aria-controls="menu-container"
+        data-menu-button
+      >
+        <svg width="40" height="40" aria-label="open mobile menu">
+          <use
+            class="batton-menu__icon batton-menu__icon--open"
+            href="./images/icons.svg#icon-menu-open"
+          ></use>
+          <use
+            class="batton-menu__icon batton-menu__icon--close"
+            href="./images/icons.svg#icon-menu-close"
+          ></use>
+        </svg>
+      </button>
+    </nav>
+
+    <div class="menu-mobile" id="menu-container" data-menu>
+      <a class="logo" href="./index.html">
+        <svg class="logo__icon">
+          <use href="./images/icons.svg#icon-logo"></use>
+        </svg>
+      </a>
+
+      <ul class="menu__list list">
+        <li class="menu__item">
+          <a class="menu__link link" href="#about">About us</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link link" href="#program">Program</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link link" href="#reviews">Reviews</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link link" href="#contacts">Contacts</a>
+        </li>
+      </ul>
+    </div>
+
+    <h1 class="header__title title">Donut Masterclass <br />with the Donut King</h1>
+    <p class="header__label">Hosted by Eva Green</p>
+    <a class="button-submit" href="#registration">Register</a>
+
+    <div class="socials">
+      <ul class="socials__list list">
+        <li class="socials__item">
+          <a href="" class="socials__link link" target="_blank" rel="noopener noreferrer">
+            <svg class="socials__icon">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a href="" class="socials__link link" target="_blank" rel="noopener noreferrer">
+            <svg class="socials__icon">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a href="" class="socials__link link" target="_blank" rel="noopener noreferrer">
+            <svg class="socials__icon">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
