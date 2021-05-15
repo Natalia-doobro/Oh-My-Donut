@@ -3,8 +3,20 @@
   <h2 class="title">Contact</h2>
   <p>We will answer any question!</p>
   <form class="contact_form" autocomplete="on" novalidate>
-    <input class="contact__input" type="email" name="email" placeholder="Email" />
-    <input class="contact__input" type="text" name="question" placeholder="Type your question" />
+    <input
+      class="contact__input"
+      type="email"
+      name="email"
+      placeholder="Email"
+      pattern="[A-Za-z]"
+    />
+    <input
+      class="contact__input"
+      type="text"
+      name="question"
+      placeholder="Type your question"
+      pattern="^[a-zA-Z\s]+$^[А-Яа-яЁё\s]+$^[ 0-9]+$"
+    />
     <button class="button-send">Send</button>
   </form>
-</section class="contact">
+</section>
