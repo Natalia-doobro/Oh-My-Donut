@@ -5,14 +5,14 @@
   margin-left: auto;
 
   @media screen and (min-width: $mobile) {
-    width: $mobile;
+    width: 290px;
   }
 
   @media screen and (min-width: $tablet) {
-    width: $tablet;
+    width: 635px;
   }
 
   @media screen and (min-width: $desktop) {
-    width: $desktop;
+    width: 825px;
   }
 }
