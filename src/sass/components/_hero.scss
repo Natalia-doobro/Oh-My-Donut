@@ -2,7 +2,7 @@
   position: relative;
   text-align: center;
   z-index: 5;
-  padding-top: 83px;
+  padding-top: 85px;
   padding-bottom: 20px;
 
   @media screen and (min-width: $tablet) {
@@ -12,17 +12,20 @@
   }
 
   @media screen and (min-width: $desktop) {
-    padding-top: 159px;
-    padding-bottom: 123px;
+    padding-top: 160px;
+    padding-bottom: 125px;
   }
 }
 
 .hero__title {
+  display: inline-block;
+  max-width: 224px;
   margin-bottom: 3px;
   font-size: 30px;
-  line-height: 1.27;
+  line-height: 1.25;
 
   @media screen and (min-width: $desktop) {
+    max-width: 490px;
     margin-bottom: 15px;
     font-size: 64px;
     line-height: 1.02;
