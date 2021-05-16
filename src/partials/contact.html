@@ -1,4 +1,5 @@
 <!--секция для роботы с Contact (Разработчик:Naira Kazeian)-->
+<<<<<<< Updated upstream
 <div class="container contact-section">
   <h2 class="section__title сontact--title">Contact</h2>
   <p class="contact__subtitle">We will answer any question!</p>
@@ -20,3 +21,28 @@
     <button type="submit" class="button button--send">Send</button>
   </form>
 </div>
+=======
+<section class="contact-section">
+  <div class="container">
+    <h2 class="section__title сontact--title">Contact</h2>
+    <p class="contact__subtitle">We will answer any question!</p>
+    <form class="contact__form" autocomplete="on" novalidate>
+      <input
+        class="contact__input"
+        type="email"
+        name="email"
+        placeholder="Email"
+        pattern="[A-Za-z]^[ 0-9]+$"
+      />
+      <input
+        class="contact__input"
+        type="text"
+        name="question"
+        placeholder="Type your question"
+        pattern="^[a-zA-Z\s]+$^[А-Яа-яЁё\s]+$^[ 0-9]+$"
+      />
+      <button type="submit" class="button button--send">Send</button>
+    </form>
+  </div>
+</section>
+>>>>>>> Stashed changes
