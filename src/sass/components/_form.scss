@@ -2,6 +2,8 @@
   color: red;
 }
 .contact__input {
+  display: block;
+  align-items: center;
   color: var(--placeholder-color);
   line-height: 1.22;
   width: 100%;
@@ -11,4 +13,12 @@
   border-right: none;
   border-top: none;
   border-color: var(--button-bg-color);
+
+  @media screen and (min-width: $tablet) {
+    width: 410px;
+    height: 22px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 430px;
+  }
 }
