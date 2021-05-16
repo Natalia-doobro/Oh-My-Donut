@@ -5,8 +5,14 @@
         <article>
             <ul class="reviews-list">
                 <li class="reviews__item reviews__item--wrap">
-                    <img src="" alt="photo of John's client">
-                    <img src="" alt="rate">
+                    <picture>
+                        <source srcset="./images/reviews/desktop/john-desktop.jpg 1x, ./images/reviews/desktop/john-desktop@2x.jpg 2x">
+                        <source srcset="./images/reviews/tablet/john-tablet.jpg 1x, ./images/reviews/tablet/john-tablet@2x.jpg 2x">
+                        <img src="./images/reviews/desktop/john-desktop.jpg" alt="photo of John's client" width="234">
+                    </picture>
+                    <svg class="reviews__icon" width="136" height="24">
+                        <use href="./images/sprite.svg#icon-rate4stars"></use>
+                    </svg>
                     <h3 class="reviewer-name">John</h3>
                     <p class="review-text">
                         Last time I have visited a cooking course by Eva
@@ -23,6 +29,8 @@
                 <li class="reviews__item">
                     <picture>
                         <source srcset="./images/reviews/mobile/will-mobile.jpg 1x, ./images/reviews/mobile/will-mobile@2x.jpg 2x">
+                        <source srcset="./images/reviews/tablet/will-tablet.jpg 1x, ./images/reviews/tablet/will-tablet@2x.jpg 2x">
+                        <source srcset="./images/reviews/desktop/will-desktop.jpg 1x, ./images/reviews/desktop/will-desktop@2x.jpg 2x">
                         <img src="./images/reviews/mobile/will-mobile.jpg" alt="photo of Will's client" width="234">  
                     </picture>                
                         <svg class="reviews__icon" width="136" height="24">
@@ -42,8 +50,14 @@
                     </p>
                 </li>
                 <li class="reviews__item reviews__item--wrap">
-                    <img src="" alt="photo of Elizabeth client">
-                    <img src="" alt="rate">
+                    <picture>
+                        <source srcset="./images/reviews/desktop/elisabeth-desktop.jpg 1x, ./images/reviews/desktop/elisabeth-desktop@2x.jpg 2x">
+                        <source srcset="./images/reviews/tablet/elisabeth-tablet.jpg 1x, ./images/reviews/tablet/elisabeth-tablet@2x.jpg 2x">
+                        <img src="./images/reviews/desktop/elisabeth-desktop.jpg" alt="photo of Elizabeth client" width="234">
+                    </picture>
+                    <svg class="reviews__icon" width="136" height="24">
+                        <use href="./images/sprite.svg#icon-rate5stars"></use>
+                    </svg>
                     <h3 class="reviewer-name">Elizabeth</h3>
                     <p class="review-text">
                         Last time I have visited a cooking course by Eva
