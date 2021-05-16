@@ -1,1 +1,23 @@
-<!--секция для роботы с Contact (Разработчик:     )-->
+<section class="contact-section">
+  <div class="container">
+    <h2 class="section__title сontact--title">Contact</h2>
+    <p class="contact__subtitle">We will answer any question!</p>
+    <form class="contact__form" autocomplete="on" novalidate>
+      <input
+        class="contact__input"
+        type="email"
+        name="email"
+        placeholder="Email"
+        pattern="[A-Za-z]^[ 0-9]+$"
+      />
+      <input
+        class="contact__input"
+        type="text"
+        name="question"
+        placeholder="Type your question"
+        pattern=""
+      />
+      <button type="submit" class="button button--send">Send</button>
+    </form>
+  </div>
+</section>

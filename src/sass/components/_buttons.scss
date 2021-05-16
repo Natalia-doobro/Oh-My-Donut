@@ -1,4 +1,4 @@
-.button-submit {
+.button {
   padding: 8px 47px;
   text-align: center;
   border-radius: 25px;
@@ -23,7 +23,7 @@
     background-color: var(--button-active-color);
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     font-size: 24px;
     line-height: 1.22;
   }

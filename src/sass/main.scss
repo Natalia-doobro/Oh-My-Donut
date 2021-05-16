@@ -10,8 +10,10 @@
 @import './utils/breakpoints';
 /* Главное */
 @import './base/common';
-@import './layout/section-about-us';
-
+@import './components/buttons';
+@import './components/container';
+@import './components/section';
+@import './components/socials';
 
 /*стили для основной части*/
 /*шапка*/
@@ -19,9 +21,10 @@
 /*==============================*/
 
 /*уникальный контент страницы*/
-
+@import './layout/section-about-us';
 /*==============================*/
 
 /*подвал*/
-
+@import './components/form';
+@import './components/contact';
 /*==============================*/
