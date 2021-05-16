@@ -18,10 +18,15 @@
 
 /*стили для основной части*/
 /*шапка*/
+@import './components/header';
+@import './components/menu';
+@import './components/logo';
+@import './components/button-menu';
 
 /*==============================*/
 
 /*уникальный контент страницы*/
+@import './components/hero';
 @import './layout/section-about-us';
 /*==============================*/
 
