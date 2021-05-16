@@ -17,10 +17,14 @@
 
 /*стили для основной части*/
 /*шапка*/
+@import './components/header';
+@import './components/menu';
+@import './components/logo';
 
 /*==============================*/
 
 /*уникальный контент страницы*/
+@import './components/hero';
 
 /*==============================*/
 

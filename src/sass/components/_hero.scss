@@ -1,0 +1,88 @@
+.hero__container {
+  position: relative;
+  text-align: center;
+  z-index: 5;
+  padding-top: 83px;
+  padding-bottom: 20px;
+
+  @media screen and (min-width: $tablet) {
+    text-align: left;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 159px;
+    padding-bottom: 123px;
+  }
+}
+
+.hero__title {
+  margin-bottom: 3px;
+  font-size: 30px;
+  line-height: 1.27;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 15px;
+    font-size: 64px;
+    line-height: 1.02;
+  }
+}
+
+.hero__label {
+  margin-bottom: 37px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 26px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 1.21;
+  }
+}
+
+.hero__button {
+  display: inline-block;
+  margin-bottom: 32px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 18px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 52px;
+  }
+}
+
+.hero__img-donuts {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  @media screen and (min-width: $tablet) {
+    left: auto;
+    right: 137px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    left: auto;
+    right: 0;
+  }
+}
+
+.hero__img-spoon {
+  position: absolute;
+  top: 166px;
+  left: 0;
+  z-index: -1;
+
+  @media screen and (max-width: 1279.9px) {
+    display: none;
+  }
+}
