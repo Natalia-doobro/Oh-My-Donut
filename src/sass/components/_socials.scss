@@ -1,9 +1,17 @@
+.socials__list {
+  display: inline-flex;
+}
+
+.socials__item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .socials__link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
 
   transition: background-color var(--animation-duration);
@@ -13,9 +21,8 @@
     background-color: var(--button-bg-color);
   }
 
-  @media screen and (min-width: 1280px) {
-    width: 48px;
-    height: 48px;
+  &:active {
+    background-color: var(--button-accent-color);
   }
 }
 
