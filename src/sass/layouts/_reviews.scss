@@ -1,0 +1,47 @@
+.reviewer-name {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 4.64;
+  color: var(--text-color);
+}
+
+.review-text {
+  line-height: 1.25;
+  color: var(--text-color);
+}
+
+.reviews__item--wrap {
+  @media screen and (max-width: 767.98px) {
+    display: none;
+  }
+}
+
+.pagination-text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.21;
+  color: var(--button-bg-color);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    width: 35px;
+    height: 0px;
+    border: 1px solid var(--button-bg-color);
+    transform: rotate(180deg);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    width: 35px;
+    height: 0px;
+    border: 1px solid var(--button-bg-color);
+    transform: rotate(180deg);
+  }
+}
