@@ -1,0 +1,33 @@
+.logo {
+  margin-right: auto;
+  margin-left: auto;
+
+  @media screen and (min-width: $tablet) {
+    margin-left: 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 38px;
+  }
+}
+
+.logo__icon {
+  width: 96px;
+  height: 43px;
+  fill: var(--title-color);
+
+  @media screen and (min-width: $desktop) {
+    width: 158px;
+    height: 71px;
+  }
+}
+
+.logo--mobile {
+  margin-bottom: 40px;
+}
+
+.logo__icon--mobile {
+  width: 190px;
+  height: 85px;
+  fill: var(--title-color);
+}

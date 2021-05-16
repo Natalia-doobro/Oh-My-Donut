@@ -1,0 +1,60 @@
+.button-menu {
+  position: absolute;
+  top: 15px;
+  right: calc((100% - 320px) / 2 + 15px);
+  z-index: 12;
+
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+
+  @media screen and (min-width: $tablet) {
+    top: 25px;
+    right: calc((100% - 768px) / 2 + 67px);
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.button-menu__icon {
+  width: 30px;
+  height: 16px;
+  fill: var(--button-close-color);
+
+  transition: fill var(--animation-duration);
+
+  .button-menu.is-open & {
+    width: 18px;
+    height: 18px;
+  }
+
+  .button-menu:hover &,
+  .button-menu:focus & {
+    fill: var(--button-bg-color);
+  }
+
+  .button-menu:active & {
+    fill: var(--button-accent-color);
+  }
+}
+
+.icon-menu {
+  display: block;
+
+  .button-menu.is-open & {
+    display: none;
+  }
+}
+
+.icon-close {
+  display: none;
+
+  .button-menu.is-open & {
+    display: block;
+    z-index: 12;
+  }
+}
