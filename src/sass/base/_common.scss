@@ -50,7 +50,7 @@ body {
   line-height: 1.22;
   color: var(--text-color);
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     background-color: var(--second-body-color);
     font-size: 18px;
   }
@@ -58,5 +58,6 @@ body {
 
 .title {
   font-family: 'Caveat Brush', sans-serif;
+  font-weight: 400;
   color: var(--title-color);
 }
