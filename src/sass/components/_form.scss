@@ -1,6 +1,10 @@
+.contact__input:valid {
+  color: inherit;
+}
 .contact__input:invalid {
   color: red;
 }
+
 .contact__input {
   display: block;
   align-items: center;
