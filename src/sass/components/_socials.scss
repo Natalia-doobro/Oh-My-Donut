@@ -21,14 +21,12 @@
     background-color: var(--button-bg-color);
   }
 
-  @media screen and (min-width: 1280px) {
-    width: 45px;
-    height: 45px;
+  &:active {
+    background-color: var(--button-accent-color);
   }
 }
 
 .socials__icon {
-  height: 15px;
   fill: var(--icon-color);
 
   transition: fill var(--animation-duration);
@@ -36,9 +34,5 @@
   .socials__link:hover &,
   .socials__link:focus & {
     fill: var(--button-text-color);
-  }
-
-  @media screen and (min-width: 1280px) {
-    height: 19px;
   }
 }
