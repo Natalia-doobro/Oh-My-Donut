@@ -14,18 +14,27 @@
 @import './components/container';
 @import './components/section';
 @import './components/socials';
+@import './components/section-program';
 
 /*стили для основной части*/
 /*шапка*/
+@import './components/header';
+@import './components/menu';
+@import './components/logo';
+@import './components/button-menu';
 
 /*==============================*/
 
 /*уникальный контент страницы*/
+@import './components/hero';
+@import './layout/section-about-us';
+
 @import './components/registration';
 @import './components/form-registration';
 @import './components/validator-form';
 /*==============================*/
 
 /*подвал*/
-
+@import './components/form';
+@import './components/contact';
 /*==============================*/

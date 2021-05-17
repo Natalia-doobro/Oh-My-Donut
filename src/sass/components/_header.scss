@@ -1,0 +1,20 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 6;
+
+  width: 100%;
+  padding-top: 7px;
+  padding-bottom: 7px;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 27px;
+    padding-bottom: 27;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 31px;
+    padding-bottom: 31px;
+  }
+}
