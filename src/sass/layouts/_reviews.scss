@@ -1,3 +1,17 @@
+.section__title {
+  text-align: center;
+}
+
+.reviews-list {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+}
+
+.reviews-list__item {
+  text-align: center;
+}
+
 .reviewer-name {
   font-style: italic;
   font-weight: 500;
@@ -11,18 +25,19 @@
   color: var(--text-color);
 }
 
-.reviews__item--wrap {
-  @media screen and (max-width: 767.98px) {
-    display: none;
+.reviews-list__item--wrap {
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+    display: block;
   }
 }
 
 .pagination-text {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 1.21;
+  display: block;
+  text-align: center;
   color: var(--button-bg-color);
 
   &::before {
