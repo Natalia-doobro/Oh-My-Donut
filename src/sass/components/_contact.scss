@@ -1,0 +1,35 @@
+.contact-section {
+  padding-top: 27px;
+  padding-bottom: 27px;
+  text-align: center;
+  display: block;
+
+  @media screen and (max-width: $tablet) {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .contact__form {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .сontact--title {
+    font-size: 36px;
+  }
+}
+
+.contact__subtitle {
+  margin-top: 20px;
+  @media screen and (min-width: $desktop) {
+    font-size: 18px;
+  }
+}
+
+.button--send {
+  margin-top: 37px;
+  width: 145px;
+}
