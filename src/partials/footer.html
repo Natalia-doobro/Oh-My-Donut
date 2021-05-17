@@ -1,44 +1,78 @@
 <!--секция для роботы с Footer (Разработчик:Naira Kazeian)-->
 <footer>
-  <ul class="socials list">
-    <li>
-      <svg class="socials__icon" width="24px" height="19px">
-        <use href="./images/sprite.svg#icon-twitter"></use>
-      </svg>
-    </li>
-    <li>
-      <svg class="socials__icon" width="19px" height="19px">
-        <use href="./images/sprite.svg#icon-instagram"></use>
-      </svg>
-    </li>
-    <li>
-      <svg class="socials__icon" width="10.27px" height="19px">
-        <use href="./images/sprite.svg#icon-facebook"></use>
-      </svg>
-    </li>
-  </ul>
+  <section class="footer-section">
+    <div class="container">
+      <ul class="socials__list socials__list--footer list">
+        <li class="socials__item">
+          <a href="" class="socials__link link">
+            <svg class="socials__icon" width="24px" height="19px">
+              <use href="./images/sprite.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a href="" class="socials__link link">
+            <svg class="socials__icon" width="19px" height="19px">
+              <use href="./images/sprite.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a href="" class="socials__link link">
+            <svg class="socials__icon" width="10.27px" height="19px">
+              <use href="./images/sprite.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
 
-  <ul class="list">
-    <li class="footer__number">
-      <a href="+19102228855" class="link" target="_blank" rel="noopener noreferrer">
-        <svg class="icon" width="500px" height="500px">
-          <use href="./images/sprite.svg#icon-logo"></use>
-        </svg>
-        (910)222-8855
-      </a>
-    </li>
-    <li class="footer__location">
-      <a
-        class="link"
-        href="https://goo.gl/maps/2vdoLoJ56FoLfRmi8"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <svg class="icon" width="11px" height="14.44px">
-          <use href="./images/sprite.svg#icon-location"></use>
-        </svg>
-        New York</a
-      >
-    </li>
-  </ul>
+      <ul class="adress list">
+        <li class="adress__number">
+          <a href="+19102228855" class="link" target="_blank" rel="noopener noreferrer">
+            <svg class="icon" width="13px" height="13px">
+              <use href="./images/sprite.svg#icon-phone"></use>
+            </svg>
+            (910)222-8855
+          </a>
+        </li>
+        <li class="adress__location">
+          <a
+            class="link"
+            href="https://goo.gl/maps/2vdoLoJ56FoLfRmi8"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="icon" width="11px" height="14.44px">
+              <use href="./images/sprite.svg#icon-location"></use>
+            </svg>
+            New York</a
+          >
+        </li>
+      </ul>
+    </div>
+    <picture class="footer__picture">
+      <source
+        srcset="
+          ./images/footer/wheatflour_desktop.png    1x,
+          ./images/footer/wheatflour_desktop@2x.png 2x
+        "
+        media="(min-width:$desktop)"
+      />
+      <source
+        srcset="
+          ./images/footer/wheatflour_tablet.png    1x,
+          ./images/footer/wheatflour_tablet@2x.png 2x
+        "
+        media="(min-width:$tablet)"
+      />
+      <source
+        srcset="
+          ./images/footer/wheatflour_mobile.png    1x,
+          ./images/footer/wheatflour_mobile@2x.png 2x
+        "
+        media="(max-width:$tablet)"
+      />
+      <img src="./images/footer/wheatflour_desktop.png" alt="Миска с мукой и лопаткой" />
+    </picture>
+  </section>
 </footer>
