@@ -1,21 +1,27 @@
 .container--position {
   @media screen and (mon-width: 320px) {
-    margin-top: -19px;
-    margin-left: -19px;
+    // margin-top: -19px;
+    // margin-left: -19px;
   }
 
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
-    margin-top: -19px;
-    margin-left: -19px;
+    // margin-top: -19px;
+    // margin-left: -19px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container__item {
-    margin: 19px;
+    // margin: 19px;
     width: calc((100% - 2 * 38px / 2));
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container__item {
+    // margin: 20px;
+    width: calc((100% - 2 * 40px / 2));
   }
 }
 
@@ -37,7 +43,7 @@
 }
 
 .btn {
-  padding: 5px 0;
+  padding: 0 0;
   font-size: 18px;
   border-radius: 10px;
   line-height: 2;
@@ -52,28 +58,34 @@
   }
 }
 
-// .servises__list {
-//   display: flex;
-// }
-// .servises__selection {
-//   display: flex;
-// }
-.servises__selection:nth-child(2n) {
-  position: relative;
-  top: 26px;
+.servises__list {
+  display: flex;
+  flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+    margin-left: 27px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 40px;
+  }
 }
 
 .servises__card {
   align-items: center;
   position: relative;
-  margin-bottom: 57px;
-  margin-right: 10px;
   width: 142px;
   height: 142px;
   text-align: center;
   border-radius: 50%;
   background-color: var(--bg-menu-color);
   box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
+}
+
+@media screen and (min-width: 1280px) {
+  .servises__card {
+    width: 180px;
+    height: 180px;
+  }
 }
 
 .servises__img {
@@ -85,6 +97,17 @@
 .servises__icon {
   width: 19px;
   height: 18px;
+}
+
+.servises__item:nth-child(2n) {
+  position: relative;
+  top: 25px;
+  margin-bottom: 30px;
+  margin-left: 6px;
+
+  @media screen and (min-width: 1280px) {
+    top: 55px;
+  }
 }
 
 .servises__item {
@@ -111,6 +134,10 @@
 .servises__title {
   font-size: 18px;
   line-height: 1.28;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 24px;
+  }
 }
 
 .servises__text {
@@ -121,4 +148,8 @@
 .servises__title,
 .servises__text {
   margin-bottom: 13px;
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 16px;
+  }
 }

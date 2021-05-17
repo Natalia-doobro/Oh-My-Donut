@@ -14,7 +14,6 @@
 @import './components/container';
 @import './components/section';
 @import './components/socials';
-@import './components/section-program';
 
 /*стили для основной части*/
 /*шапка*/
@@ -28,6 +27,7 @@
 /*уникальный контент страницы*/
 @import './components/hero';
 @import './layout/section-about-us';
+@import './layout/section-program';
 /*==============================*/
 
 /*подвал*/
