@@ -5,10 +5,11 @@
 }
 
 .button--border{
-color: #AB816C;
- background-color: white;
+color: var(--button-bg-color);
+ background-color: var(--body-color);
  border: none;
  padding: 0;
+ 
  
 }
 .about-us__title{
@@ -21,4 +22,14 @@ color: #AB816C;
     margin-top: 15px;
     margin-bottom: 15px;
 }
+
   
+.about-us__foto{
+    float: left;  
+    
+}
+.about-us-inform{
+    display: block;
+    
+    margin-left: 366px;
+}
