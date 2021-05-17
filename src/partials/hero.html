@@ -1,0 +1,77 @@
+<!--секция для работы с Hero (Разработчик: Vitalii Shulga)-->
+
+<section class="hero">
+  <div class="hero__container container">
+    <h1 class="hero__title title">Donut Masterclass with the Donut King</h1>
+    <p class="hero__label">Hosted by Eva Green</p>
+    <a class="hero__button button link" id="registrationLink" href="#registration">Register</a>
+
+    <div class="socials hero__socials">
+      <ul class="socials__list list">
+        <li class="socials__item">
+          <a href="" class="socials__link link" target="_blank" rel="noopener noreferrer">
+            <svg class="socials__icon" height="18">
+              <use href="./images/sprite.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a href="" class="socials__link link" target="_blank" rel="noopener noreferrer">
+            <svg class="socials__icon" height="18">
+              <use href="./images/sprite.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a href="" class="socials__link link" target="_blank" rel="noopener noreferrer">
+            <svg class="socials__icon" height="18">
+              <use href="./images/sprite.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <picture>
+      <source
+        srcset="
+          ./images/header/desktop/donuts_desktop.png    1x,
+          ./images/header/desktop/donuts_desktop@2x.png 2x
+        "
+        media="(min-width: 1280px)"
+        type="image/png"
+        width="719"
+      />
+      <source
+        srcset="
+          ./images/header/tablet/donuts_tablet.png    1x,
+          ./images/header/tablet/donuts_tablet@2x.png 2x
+        "
+        media="(min-width: 768px)"
+        type="image/png"
+        width="380"
+      />
+      <source
+        srcset="
+          ./images/header/mobile/donuts_mobile.png    1x,
+          ./images/header/mobile/donuts_mobile@2x.png 2x
+        "
+        media="(max-width: 767.9px)"
+        type="image/png"
+        width="120"
+      />
+      <img class="hero__img-donuts" src="./images/header/mobile/donuts_mobile.png" alt="donuts" />
+    </picture>
+
+    <img
+      class="hero__img-spoon"
+      srcset="
+        ./images/header/desktop/spoon_desktop.png    1x,
+        ./images/header/desktop/spoon_desktop@2x.png 2x
+      "
+      src="./images/header/desktop/spoon_desktop.png"
+      alt="spoon"
+      width="142"
+    />
+  </div>
+</section>
