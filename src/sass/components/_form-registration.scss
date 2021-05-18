@@ -1,6 +1,6 @@
 /*форма секцыи регестрации*/
 .register-position {
-  @media screen and (max-width: 767.9px) {
+  @media screen and (max-width: $mobile-max) {
     max-width: 320px;
   }
   @media screen and (min-width: $tablet) {
@@ -18,7 +18,7 @@
   }
 }
 .form__text {
-  @media screen and (max-width: 1279.9px) {
+  @media screen and (max-width: $tablet-max) {
     margin-bottom: 17px;
   }
 
@@ -59,7 +59,7 @@
   }
 
   &:not(:last-child) {
-    @media screen and (max-width: 767.9px) {
+    @media screen and (max-width: $mobile-max) {
       margin-bottom: 25px;
     }
     @media screen and (min-width: $tablet) {
@@ -69,9 +69,17 @@
       margin-bottom: 15px;
     }
   }
+  &:focus {
+    outline: none;
+    border-bottom: 2px solid #2e2520;
+
+    &::placeholder {
+      --placeholder-color: #876655;
+    }
+  }
 }
 .register__button {
-  @media screen and (max-width: 767.9px) {
+  @media screen and (max-width: $mobile-max) {
     margin-top: 35px;
   }
   @media screen and (min-width: $tablet) {
