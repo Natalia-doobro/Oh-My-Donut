@@ -1,0 +1,30 @@
+.adress {
+  display: flex;
+  justify-content: space-between;
+}
+
+.socials__list {
+  margin-bottom: 34px;
+  justify-content: center;
+}
+
+.footer-section {
+  padding-bottom: 20px;
+  margin-top: 20px;
+}
+
+.socials__list--footer {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-section {
+  position: relative;
+}
+
+.footer__picture {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}

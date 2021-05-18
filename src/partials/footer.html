@@ -1,50 +1,82 @@
 <!--секция для роботы с Footer (Разработчик:Naira Kazeian)-->
-<footer class="footer">
-  <div class="container">
-    <ul class="socials__list list">
-      <li class="socials__item">
-        <a href="" class="socials__link link" target="_blank" rel="noopener noreferrer">
-          <svg class="socials__icon">
-            <use href="./images/sprite.svg#icon-twitter"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="socials__item">
-        <a href="" class="socials__link link" target="_blank" rel="noopener noreferrer">
-          <svg class="socials__icon">
-            <use href="./images/sprite.svg#icon-instagram"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="socials__item">
-        <a href="" class="socials__link link" target="_blank" rel="noopener noreferrer">
-          <svg class="socials__icon">
-            <use href="./images/sprite.svg#icon-twitter"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
-  <ul class="list">
-    <li class="footer__number">
-      <a href="+19102228855" class="link" target="_blank" rel="noopener noreferrer">
-        <svg class="icon" width="500px" height="500px">
-          <use href="./images/sprite.svg#icon-logo"></use>
-        </svg>
-        (910)222-8855
-      </a>
-    </li>
-    <li class="footer__location">
-      <a
-        class="link"
-        href="https://goo.gl/maps/2vdoLoJ56FoLfRmi8"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <svg class="icon" width="11px" height="14.44px">
-          <use href="./images/sprite.svg#icon-location"></use>
-        </svg>
-        New York</a
-      >
-    </li>
-  </ul>
+<footerclass="footer-section">
+    <div class="container">
+      <ul class="socials__list socials__list--footer list">
+        <li class="socials__item">
+          <a href="" class="socials__link link">
+            <svg class="socials__icon" width="24px" height="19px">
+              <use href="./images/sprite.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a href="" class="socials__link link">
+            <svg class="socials__icon" width="19px" height="19px">
+              <use href="./images/sprite.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a href="" class="socials__link link">
+            <svg class="socials__icon" width="10.27px" height="19px">
+              <use href="./images/sprite.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+
+      <ul class="adress list">
+        <li class="adress__number">
+          <a href="+19102228855" class="link" target="_blank" rel="noopener noreferrer">
+            <svg class="icon" width="13px" height="13px">
+              <use href="./images/sprite.svg#icon-phone"></use>
+            </svg>
+            (910)222-8855
+          </a>
+        </li>
+        <li class="adress__location">
+          <a
+            class="link"
+            href="https://goo.gl/maps/2vdoLoJ56FoLfRmi8"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="icon" width="11px" height="14.44px">
+              <use href="./images/sprite.svg#icon-location"></use>
+            </svg>
+            New York</a
+          >
+        </li>
+      </ul>
+    </div>
+    <picture class="footer__picture">
+      <source
+        srcset="
+          ./images/footer/wheatflour-desktop.png    1x,
+          ./images/footer/wheatflour-desktop@2x.png 2x
+        "
+        media="(min-width:1200px)"
+        type="image/png"
+        width="362px"
+      />
+      <source
+        srcset="
+          ./images/footer/wheatflour-tablet.png    1x,
+          ./images/footer/wheatflour-tablet@2x.png 2x
+        "
+        media="(min-width:768px)"
+        type="image/png"
+        width="207px"
+      />
+      <source
+        srcset="
+          ./images/footer/wheatflour-mobile.png    1x,
+          ./images/footer/wheatflour-mobile@2x.png 2x
+        "
+        media="(max-width:767.98px)"
+        type="image/png"
+        width="113px"
+      />
+      <img src="./images/footer/wheatflour-desktop.png" alt="Bowl with flour and spatula" />
+    </picture>
 </footer>
