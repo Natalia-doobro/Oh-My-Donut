@@ -58,9 +58,11 @@
 }
 
 .hamburger-inner::before {
+  content: '';
   top: -7px;
 }
 .hamburger-inner::after {
+  content: '';
   bottom: -7px;
 }
 
