@@ -67,7 +67,7 @@
   margin-right: auto;
 
   @media screen and (max-width: $mobile-max) {
-    width: $mobile;
+    max-width: $mobile;
     z-index: 2;
     background-image: url('../images/header/mobile/donuts_mobile.png');
     background-size: 120px 114px;
