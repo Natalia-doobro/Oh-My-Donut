@@ -1,10 +1,69 @@
-.foto-donut{  
-    position: absolute;
-    bottom: 815px;
-    left: 65px;
+.section__about-us{
+  @media screen and (min-width: 768px) {
+  
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+}
+.button--border{
+color: var(--button-bg-color);
+ background-color: var(--body-color);
+ border: none;
+ padding: 0;
+ padding-top: 10px;
+ padding-bottom: 10px;
+ &:hover,
+  &:focus {
+    background-color: #fffff9;
+    transform: scale(1.2);
+    transform: translate (10px, 20px);
+  }
+ 
+ @media screen and (min-width: 1280px) {
+    display: none;
+  }
+ 
+}
+.about-us__title{
+    text-align: center;
+    justify-content: center;
+ @media screen and (min-width: 768px) {
+    text-align: left;
+      }  
 }
 
-.abouts-us__button{
- background-color: white;
-border: none;
+.about-us__text{
+ 
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.about-us__descriptions{
+  @media screen and (max-width: 767.9px) {
+    max-width: 290px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 690x;
+    display: flex;
+    justify-content: center;
+  align-items: center
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1017px;
+  }
+   
+}
+.about-us__foto{
+ 
+  @media screen and (min-width: 768px){
+  margin-right: 25px;
+  min-width: 330px;
+}
+@media screen and (min-width: 1280px){
+  margin-right:76px;
+  min-width: 512px;
+}
 }

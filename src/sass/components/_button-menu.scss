@@ -1,8 +1,10 @@
-.button-menu {
+.hamburger {
+  width: 30px;
+  height: 26px;
   position: absolute;
-  top: 15px;
-  right: calc((100% - 320px) / 2 + 15px);
-  z-index: 12;
+  top: 2px;
+  right: 15px;
+  z-index: 11;
 
   padding: 0;
   border: none;
@@ -10,9 +12,19 @@
   outline: none;
   cursor: pointer;
 
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &.is-open:hover,
+  &.is-open:focus {
+    opacity: 0.7;
+  }
+
   @media screen and (min-width: $tablet) {
-    top: 25px;
-    right: calc((100% - 768px) / 2 + 67px);
+    top: 0;
+    right: 67px;
   }
 
   @media screen and (min-width: $desktop) {
@@ -20,41 +32,64 @@
   }
 }
 
-.button-menu__icon {
-  width: 30px;
-  height: 16px;
-  fill: var(--button-close-color);
-
-  transition: fill var(--animation-duration);
-
-  .button-menu.is-open & {
-    width: 18px;
-    height: 18px;
-  }
-
-  .button-menu:hover &,
-  .button-menu:focus & {
-    fill: var(--button-bg-color);
-  }
-
-  .button-menu:active & {
-    fill: var(--button-accent-color);
-  }
-}
-
-.icon-menu {
+.hamburger-inner {
   display: block;
-
-  .button-menu.is-open & {
-    display: none;
-  }
+  top: 50%;
+  margin-top: -1px;
 }
 
-.icon-close {
-  display: none;
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  content: '';
+  width: 30px;
+  height: 2px;
+  background-color: var(--button-close-color);
+  border-radius: 2px;
+  position: absolute;
 
-  .button-menu.is-open & {
-    display: block;
-    z-index: 12;
-  }
+  transition: transform var(--animation-duration);
+}
+
+.hamburger-inner::before,
+.hamburger-inner::after {
+  content: '';
+  display: block;
+}
+
+.hamburger-inner::before {
+  content: '';
+  top: -7px;
+}
+.hamburger-inner::after {
+  content: '';
+  bottom: -7px;
+}
+
+// animation
+
+.hamburger-inner {
+  transition-duration: 0.075s;
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.hamburger-inner::before {
+  transition: top 0.075s 0.12s ease, opacity 0.075s ease;
+}
+.hamburger-inner::after {
+  transition: bottom 0.075s 0.12s ease, transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.hamburger.is-open .hamburger-inner {
+  transform: rotate(45deg);
+  transition-delay: 0.12s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.hamburger.is-open .hamburger-inner::before {
+  top: 0;
+  opacity: 0;
+  transition: top 0.075s ease, opacity 0.075s 0.12s ease;
+}
+.hamburger.is-open .hamburger-inner::after {
+  bottom: 0;
+  transform: rotate(-90deg);
+  transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
