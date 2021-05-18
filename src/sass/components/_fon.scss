@@ -3,10 +3,10 @@
   margin-right: auto;
 
   @media screen and (max-width: $mobile-max) {
-    max-width: $mobile;
+    max-width: 100%;
     z-index: 1;
     background-image: url('../images/fon/mobile/bg-mobile.png');
-    background-size: 320px 460.5px;
+    background-size: 100% 460.5px;
     background-repeat: no-repeat;
     background-position: top;
 
@@ -19,10 +19,10 @@
   }
 
   @media screen and (min-width: $tablet) and (max-width: $tablet-max) {
-    max-width: $tablet;
+    max-width: 100%;
     z-index: 1;
     background-image: url('../images/fon/tablet/bg-tablet.png');
-    background-size: 769px 622px;
+    background-size: 100% 622px;
     background-repeat: no-repeat;
     background-position: top;
 
@@ -56,10 +56,10 @@
   margin-right: auto;
 
   @media screen and (max-width: $mobile-max) {
-    max-width: $mobile;
+    max-width: 100%;
     z-index: 1;
     background-image: url('../images/fon/mobile/background-mobile.png');
-    background-size: 320px 1300px;
+    background-size: 100% 1300px;
     background-repeat: no-repeat;
     background-position: top left;
 
@@ -72,10 +72,10 @@
   }
 
   @media screen and (min-width: $tablet) and (max-width: $tablet-max) {
-    max-width: $tablet;
+    max-width: 100%;
     z-index: 1;
     background-image: url('../images/fon/tablet/background-tablet.png');
-    background-size: 769px 1450px;
+    background-size: 100% 1450px;
     background-repeat: no-repeat;
     background-position: top left;
 
