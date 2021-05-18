@@ -7,8 +7,6 @@
   .container--position {
     display: flex;
     justify-content: space-between;
-    // margin-top: -19px;
-    // margin-left: -19px;
   }
 }
 
@@ -130,15 +128,10 @@
   transform: scale(1.1);
 }
 
-// .servises__link {
-//   transform: scale(1.1);
-// }
-
 .servises__description {
   position: absolute;
   width: 100%;
   top: 33%;
-  // outline: 1px solid tomato;
 }
 
 .servises__title {
