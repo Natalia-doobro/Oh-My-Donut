@@ -5,18 +5,17 @@
     <p class="contact__subtitle">We will answer any question!</p>
     <form class="contact__form" autocomplete="on" novalidate>
       <input
-        class="contact__input"
+        class="contact__input form--valid"
         type="email"
         name="email"
         placeholder="Email"
-        pattern="[A-Za-z]^[ 0-9]+$"
       />
       <input
-        class="contact__input"
+        class="contact__input form--valid"
         type="text"
         name="question"
         placeholder="Type your question"
-        pattern=""
+        pattern="^[A-Za-zА-Яа-яЁё\s]+$"
       />
       <button type="submit" class="button button--send">Send</button>
     </form>
