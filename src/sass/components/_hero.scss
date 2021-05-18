@@ -85,7 +85,7 @@
   left: 0;
   z-index: -1;
 
-  @media screen and (max-width: 1279.9px) {
+  @media screen and (max-width: $tablet-max) {
     display: none;
   }
 }
