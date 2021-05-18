@@ -6,14 +6,10 @@ color: var(--button-bg-color);
  padding: 0;
  padding-top: 10px;
  padding-bottom: 10px;
- & :hover{
-     transform: scale(1.2) translateX(20px);
-     
- }
+ 
  @media screen and (min-width: 1280px) {
     display: none;
   }
- 
  
 }
 .about-us__title{
