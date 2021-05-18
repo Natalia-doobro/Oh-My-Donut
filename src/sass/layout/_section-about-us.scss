@@ -9,6 +9,9 @@ color: var(--button-bg-color);
  background-color: var(--body-color);
  border: none;
  padding: 0;
+ @media screen and (min-width: 1280px) {
+    display: none;
+  }
  
  
 }
@@ -16,6 +19,9 @@ color: var(--button-bg-color);
     display: flex;
     text-align: center;
     justify-content: center;
+ @media screen and (min-width: 768px) {
+    justify-content: start;
+      }  
 }
 
 .about-us__text{
@@ -23,13 +29,9 @@ color: var(--button-bg-color);
     margin-bottom: 15px;
 }
 
-  
-.about-us__foto{
-    float: left;  
-    
+.about-us__descriptions{
+    @media screen and (min-width: 768px){
+    display: flex;
+    align-items: center;
 }
-.about-us-inform{
-    display: block;
-    
-    margin-left: 366px;
 }
