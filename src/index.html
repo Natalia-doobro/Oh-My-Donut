@@ -17,24 +17,28 @@
  </head>
  <body>
    <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-   <!--Секцыя Header-->
-   <include src="./partials/header.html"></include>
-   <!--Секцыя  Hero-->
-   <include src="./partials/hero.html"></include>
-   <!--Секцыя  About us-->
-   <include src="./partials/about-us.html"></include>
+   <div class="bg"> 
+    <!--Секцыя Header-->
+    <include src="./partials/header.html"></include>
+    <!--Секцыя  Hero-->
+    <include src="./partials/hero.html"></include>
+    <!--Секцыя  About us-->
+    <include src="./partials/about-us.html"></include>
+   </div>
    <!--Секцыя Program-->
    <include src="./partials/program.html"></include>
-   <!--Секцыя Reviews-->
-   <include src="./partials/reviews.html"></include>
-   <div class="registration--image-confetti">
-     <!--Секцыя Registration-->
-     <include src="./partials/registration.html"></include>
-     <!--Секцыя Contact-->
-     <include src="./partials/contact.html"></include>
+   <div class="background-fon">
+    <!--Секцыя Reviews-->
+    <include src="./partials/reviews.html"></include>
+    <div class="registration--image-confetti">
+      <!--Секцыя Registration-->
+      <include src="./partials/registration.html"></include>
+      <!--Секцыя Contact-->
+      <include src="./partials/contact.html"></include>
+    </div>
+    <!--Секцыя Footer-->
+    <include src="./partials/footer.html"></include>
    </div>
-   <!--Секцыя Footer-->
-   <include src="./partials/footer.html"></include>
 
    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
    <script src="./index.js"></script>
