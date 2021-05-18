@@ -1,33 +1,28 @@
-.container--position {
-  @media screen and (mon-width: 320px) {
-    // margin-top: -19px;
-    // margin-left: -19px;
-  }
+.section__program {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
 
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .container--position {
     display: flex;
     justify-content: space-between;
-    // margin-top: -19px;
-    // margin-left: -19px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container__item {
-    // margin: 19px;
-    width: calc((100% - 2 * 38px / 2));
-  }
-}
-@media screen and (min-width: 1280px) {
-  .container__item {
-    // margin: 20px;
-    width: calc((100% - 2 * 40px / 2));
+    width: 50%;
   }
 }
 
 .section__text,
 .section__item {
   margin-bottom: 10px;
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 15px;
+  }
 }
 
 .icon-arrow::before {
@@ -43,10 +38,12 @@
 }
 
 .btn {
-  padding: 0 0;
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-size: 18px;
   border-radius: 10px;
-  line-height: 2;
+
   color: var(--button-bg-color);
   background-color: #fffff9;
 
@@ -58,9 +55,15 @@
   }
 }
 
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
 .servises__list {
   display: flex;
   flex-wrap: wrap;
+
   @media screen and (min-width: 768px) {
     margin-left: 27px;
   }
@@ -83,13 +86,13 @@
 
 .servises__card {
   @media screen and (min-width: 320px) {
-    width: 142px;
-    height: 142px;
+    width: 135px;
+    height: 135px;
   }
 
   @media screen and (min-width: 1280px) {
-    width: 180px;
-    height: 180px;
+    width: 175px;
+    height: 175px;
   }
 }
 
@@ -108,7 +111,7 @@
   position: relative;
   top: 25px;
   margin-bottom: 30px;
-  margin-left: 6px;
+  margin-left: 20px;
 
   @media screen and (min-width: 1280px) {
     top: 55px;
@@ -125,15 +128,10 @@
   transform: scale(1.1);
 }
 
-// .servises__link {
-//   transform: scale(1.1);
-// }
-
 .servises__description {
   position: absolute;
   width: 100%;
   top: 33%;
-  // outline: 1px solid tomato;
 }
 
 .servises__title {

@@ -1,47 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Oh My Donut</title>
 
-    <!--нормалізатор -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oh My Donut</title>
 
-    <link
+  <!--нормалізатор -->
+  <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
       integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
       crossorigin="anonymous"
     />
-  </head>
-  <body>
-    <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-    <!--Секцыя Header-->
-    <include src="./partials/header.html"></include>
-    <!--Секцыя  Hero-->
-    <include src="./partials/hero.html"></include>
-    <!--Секцыя  About us-->
-    <include src="./partials/about-us.html"></include>
-    <!--Секцыя Program-->
-    <include src="./partials/program.html"></include>
-    <!--Секцыя Reviews-->
-    <include src="./partials/reviews.html"></include>
-    <div class="registration--image-confetti">
-      <!--Секцыя Registration-->
-      <include src="./partials/registration.html"></include>
-      <!--Секцыя Contact-->
-      <include src="./partials/contact.html"></include>
-    </div>
-    <!--Секцыя Footer-->
-    <include src="./partials/footer.html"></include>
+ </head>
+ <body>
+   <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
+   <!--Секцыя Header-->
+   <include src="./partials/header.html"></include>
+   <!--Секцыя  Hero-->
+   <include src="./partials/hero.html"></include>
+   <!--Секцыя  About us-->
+   <include src="./partials/about-us.html"></include>
+   <!--Секцыя Program-->
+   <include src="./partials/program.html"></include>
+   <!--Секцыя Reviews-->
+   <include src="./partials/reviews.html"></include>
+   <div class="registration--image-confetti">
+     <!--Секцыя Registration-->
+     <include src="./partials/registration.html"></include>
+     <!--Секцыя Contact-->
+     <include src="./partials/contact.html"></include>
+   </div>
+   <!--Секцыя Footer-->
+   <include src="./partials/footer.html"></include>
 
-    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
-    <script src="./index.js"></script>
-    <script src="./js/mobile-menu.js"></script>
-  </body>
+   <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+   <script src="./index.js"></script>
+   <script src="./js/mobile-menu.js"></script>
+   <script src="./js/modal.js"></script>
+ </body>
 </html>
