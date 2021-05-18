@@ -128,10 +128,10 @@
   @media screen and (min-width: $tablet) and (max-width: $tablet-max) {
     z-index: 1;
     width: $tablet;
-    background-image: url('../images/images-registration/confetti.png');
+    background-image: url('../images/images-registration/confetti-tablet.png');
     background-size: 400px 373.67px;
     background-repeat: no-repeat;
-    background-position: 493px 160px;
+    background-position: 413px 160px;
   }
   @media screen and (min-width: $desktop) {
     z-index: 1;
@@ -143,6 +143,16 @@
   }
 }
 @media screen and (min-width: $tablet) {
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .registration--image-confetti {
+      background-image: url('../images/images-registration/confetti-tablet@2x.png');
+    }
+  }
+}
+@media screen and (min-width: $desktop) {
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
