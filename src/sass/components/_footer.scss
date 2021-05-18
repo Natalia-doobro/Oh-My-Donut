@@ -10,7 +10,7 @@
 
 .footer-section {
   padding-bottom: 20px;
-  margin-top: 20px;
+  padding-top: 20px;
 }
 
 .socials__list--footer {
@@ -18,13 +18,61 @@
   justify-content: center;
 }
 
-.footer-section {
-  position: relative;
-}
+// .footer__section {
+//   position: relative;
+// }
 
 .footer__picture {
-  position: absolute;
-  bottom: 0;
-  right: 0;
   z-index: -1;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-image: url(../images/footer/wheatflour-mobile.png);
+  @media screen and (max-width: $tablet),
+    (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/footer/wheatflour-tablet@2x.png);
+  }
+
+  @media screen and (min-width: $tablet) {
+    background-image: url(../images/footer/wheatflour-tablet.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/footer/wheatflour-tablet@2x.png);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/footer/wheatflour-desktop.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/footer/wheatflour-desktop@2x.png);
+    }
+  }
 }
+
+// @media (min-device-pixel-ratio: 2),
+//   (-webkit-min-device-pixel-ratio: 2),
+//   (min-resolution: 192dpi),
+//   (min-resolution: 2dppx) {
+//   .footer__picture {
+//     background-image: url(../images/footer/wheatflour-desktop@2x.png);
+//   }
+// }
+// @media (min-device-pixel-ratio: 2),
+//   (-webkit-min-device-pixel-ratio: 2),
+//   (min-resolution: 192dpi),
+//   (min-resolution: 2dppx) {
+//   .footer__picture {
+//     background-image: url(../images/footer/wheatflour-desktop@2x.png);
+//   }
+// }
+// url(../images/footer/wheatflour-tablet@2x.png);
+// url(../images/footer/wheatflour-mobile@2x.png)
