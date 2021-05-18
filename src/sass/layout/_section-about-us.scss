@@ -1,14 +1,13 @@
-.foto-donut{  
-    position: absolute;
-    bottom: 815px;
-    left: 65px;
-}
 
 .button--border{
 color: var(--button-bg-color);
  background-color: var(--body-color);
  border: none;
  padding: 0;
+ & :hover{
+     transform: scale(1.2) translateX(8px);
+     
+ }
  @media screen and (min-width: 1280px) {
     display: none;
   }
@@ -16,11 +15,11 @@ color: var(--button-bg-color);
  
 }
 .about-us__title{
-    display: flex;
+   
     text-align: center;
     justify-content: center;
  @media screen and (min-width: 768px) {
-    justify-content: start;
+    text-align: left;
       }  
 }
 
@@ -30,8 +29,18 @@ color: var(--button-bg-color);
 }
 
 .about-us__descriptions{
+  max-width: 290px; ;
     @media screen and (min-width: 768px){
     display: flex;
     align-items: center;
 }
+}
+.about-us__foto{
+  max-width:512px;
+  min-width: 290px;
+  margin: 0 auto;
+}
+.about-us__inform{
+  max-width:392px;
+  min-width:332px;
 }
