@@ -8,26 +8,45 @@
           <use href="./images/sprite.svg#icon-logo"></use>
         </svg>
       </a>
+
       <ul class="menu__list list menu--desktop">
         <li class="menu__item">
-          <a class="menu__link link" id="aboutLink" href="#about">About us</a>
+          <a class="menu__link link" href="#about">About us</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link link" id="programLink" href="#program">Program</a>
+          <a class="menu__link link" href="#program">Program</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link link" id="reviewsLink" href="#reviews">Reviews</a>
+          <a class="menu__link link" href="#reviews">Reviews</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link link" id="contactsLink" href="#contacts">Contacts</a>
+          <a class="menu__link link" href="#contacts">Contacts</a>
         </li>
       </ul>
-      <button class="button-menu" type="button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+      <button
+        class="button-menu"
+        type="button"
+        aria-expanded="false"
+        aria-controls="menu-container"
+        data-menu-button
+      >
         <svg class="button-menu__icon" aria-label="open mobile menu">
           <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
           <use class="icon-close" href="./images/sprite.svg#icon-close"></use>
         </svg>
       </button>
+
+      <!-- <button
+        class="hamburger hamburger--squeeze"
+        type="button"
+        aria-expanded="false"
+        aria-controls="menu-container"
+        data-menu-button
+      >
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button> -->
     </nav>
     
     <div class="menu--mobile" id="menu-container" data-menu>
@@ -39,16 +58,16 @@
 
       <ul class="menu__list list">
         <li class="menu__item">
-          <a class="menu__link link" id="aboutLink2" href="#about">About us</a>
+          <a class="menu__link link" href="#about" menu-close-link1 id="anchor1Link">About us</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link link" id="programLink2" href="#program">Program</a>
+          <a class="menu__link link" href="#program" menu-close-link2 id="anchor2Link">Program</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link link" id="reviewsLink2" href="#reviews">Reviews</a>
+          <a class="menu__link link" href="#reviews" menu-close-link3 id="anchor3Link">Reviews</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link link" id="contactsLink2" href="#contacts">Contacts</a>
+          <a class="menu__link link" href="#contacts" menu-close-link4 id="anchor4Link">Contacts</a>
         </li>
       </ul>
     </div>
