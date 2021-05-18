@@ -41,6 +41,7 @@
 .hamburger-inner,
 .hamburger-inner::before,
 .hamburger-inner::after {
+  content: '';
   width: 30px;
   height: 2px;
   background-color: var(--button-close-color);
