@@ -1,8 +1,19 @@
 .section__title {
+  text-align: center;
   font-size: 24px;
-  line-height: 2.7;
+  line-height: 2;
+}
 
-  @media screen and (min-width: $desktop) {
+@media screen and (min-width: $tablet) {
+  .section__title--position {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .section__title,
+  .section__title--position {
+    margin-bottom: 10px;
     font-size: 36px;
     line-height: 1.8;
   }

@@ -1,0 +1,17 @@
+/*Валидацыя для формы*/
+.form--valid:not(:placeholder-shown):valid {
+  color: #4caf50;
+  border-color: #4caf50;
+}
+.form--valid:not(:placeholder-shown):invalid {
+  color: #f44336;
+  border-color: #f44336;
+}
+.form--valid:not(:placeholder-shown):valid:not(:focus) {
+  color: var(--text-color);
+  border-color: #4caf50;
+}
+.form--valid:not(:placeholder-shown):invalid:not(:focus) {
+  color: var(--text-color);
+  border-color: #f44336;
+}

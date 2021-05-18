@@ -1,0 +1,91 @@
+/*форма секцыи регестрации*/
+.register-position {
+  @media screen and (max-width: $mobile-max) {
+    max-width: 320px;
+  }
+  @media screen and (min-width: $tablet) {
+    width: 404px;
+    height: 153px;
+  }
+}
+.register_form {
+  width: 100%;
+  @media screen and (min-width: $tablet) {
+    width: 404px;
+    height: 153px;
+    display: inline-flex;
+    align-items: center;
+  }
+}
+.form__text {
+  @media screen and (max-width: $tablet-max) {
+    margin-bottom: 17px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 15px;
+  }
+}
+.register-position-input {
+  display: flex;
+  flex-direction: column;
+}
+.register__input {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #ab816c;
+
+  background-color: transparent;
+  color: var(--text-color);
+
+  @media screen and (min-width: $tablet) {
+    width: 234px;
+  }
+
+  &::placeholder {
+    color: var(--placeholder-color);
+  }
+
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus {
+    -webkit-text-fill-color: currentColor;
+    -webkit-box-shadow: 0 0 0px 1000px var(--second-body-color) inset;
+  }
+
+  &:not(:last-child) {
+    @media screen and (max-width: $mobile-max) {
+      margin-bottom: 25px;
+    }
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 17px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 15px;
+    }
+  }
+  &:focus {
+    outline: none;
+    border-bottom: 2px solid #2e2520;
+
+    &::placeholder {
+      --placeholder-color: #876655;
+    }
+  }
+}
+.register__button {
+  @media screen and (max-width: $mobile-max) {
+    margin-top: 35px;
+  }
+  @media screen and (min-width: $tablet) {
+    margin-left: 25px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-left: 38px;
+  }
+}
