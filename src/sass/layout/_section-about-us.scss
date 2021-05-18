@@ -4,8 +4,10 @@ color: var(--button-bg-color);
  background-color: var(--body-color);
  border: none;
  padding: 0;
+ padding-top: 10px;
+ padding-bottom: 10px;
  & :hover{
-     transform: scale(1.2) translateX(8px);
+     transform: scale(1.2) translateX(20px);
      
  }
  @media screen and (min-width: 1280px) {
@@ -29,18 +31,30 @@ color: var(--button-bg-color);
 }
 
 .about-us__descriptions{
-  max-width: 290px; ;
     @media screen and (min-width: 768px){
     display: flex;
     align-items: center;
+  
 }
 }
 .about-us__foto{
-  max-width:512px;
+  max-width: 512px;
   min-width: 290px;
-  margin: 0 auto;
+  margin: 0;
+  @media screen and (min-width: 768px){
+  margin-right: 25px;
+  min-width: 330px;
+}
+@media screen and (min-width: 1280px){
+  margin-right:76px;
+  min-width: 512px;
+}
 }
 .about-us__inform{
   max-width:392px;
   min-width:332px;
+}
+.backdrop.is-hidden {
+  display: none;
+  pointer-events: none;
 }
