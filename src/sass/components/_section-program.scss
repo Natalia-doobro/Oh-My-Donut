@@ -56,7 +56,7 @@
 }
 
 .backdrop {
-  @media screen and (max-width: $desktop) {
+  @media screen and (max-width: $tablet-max) {
     &.is-hidden {
       display: none;
       opacity: 0;
