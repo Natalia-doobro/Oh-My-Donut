@@ -16,8 +16,8 @@
   }
 }
 
-.section__text,
-.section__item {
+.program__text,
+.program__item {
   margin-bottom: 10px;
 
   @media screen and (min-width: 1280px) {
@@ -56,6 +56,7 @@
 }
 
 .backdrop.is-hidden {
+  display: none;
   opacity: 0;
   pointer-events: none;
 }

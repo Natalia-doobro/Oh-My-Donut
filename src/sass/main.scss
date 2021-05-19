@@ -27,9 +27,9 @@
 
 /*уникальный контент страницы*/
 @import './components/hero';
-@import './layout/section-about-us';
-@import './layout/section-program';
-@import './layouts/reviews';
+@import './components/section-about-us';
+@import './components/section-program';
+@import './components/reviews';
 @import './components/registration';
 @import './components/form-registration';
 @import './components/validator-form';
