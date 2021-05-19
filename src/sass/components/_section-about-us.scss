@@ -7,14 +7,14 @@
 }
 .button--border {
   color: var(--button-bg-color);
-  background-color: var(--body-color);
+  background-color: transparent;
   border: none;
   padding: 0;
   padding-top: 10px;
   padding-bottom: 10px;
   &:hover,
   &:focus {
-    background-color: #fffff9;
+    background-color: transparent;
     transform: scale(1.2);
     transform: translate (10px, 20px);
   }

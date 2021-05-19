@@ -4,13 +4,24 @@
   text-align: center;
   display: block;
 }
-
-@media screen and (min-width: $tablet) {
-  .contact__form {
-    display: inline-block;
+.contact__form--position {
+  @media screen and (max-width: $mobile-max) {
+    max-width: 320px;
+  }
+  @media screen and (min-width: $tablet) {
+    width: 410px;
   }
 }
-
+.contact__form {
+  width: 100%;
+  @media screen and (min-width: $tablet) {
+    width: 410px;
+    display: inline-block;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 430px;
+  }
+}
 @media screen and (min-width: $desktop) {
   .сontact--title {
     font-size: 36px;

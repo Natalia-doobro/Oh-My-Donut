@@ -1,15 +1,19 @@
 .contact__input {
   display: block;
   align-items: center;
-  color: var(--placeholder-color);
   line-height: 1.22;
+
   width: 100%;
   height: 20px;
   margin-top: 25px;
-  border-left: none;
-  border-right: none;
+
   border-top: none;
-  border-color: var(--button-bg-color);
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #ab816c;
+
+  background-color: transparent;
+  color: var(--text-color);
 
   @media screen and (min-width: $tablet) {
     width: 410px;
@@ -19,11 +23,22 @@
   @media screen and (min-width: $desktop) {
     width: 430px;
   }
-
+  &::placeholder {
+    color: var(--placeholder-color);
+  }
   &:-webkit-autofill,
   &:-webkit-autofill:hover,
   &:-webkit-autofill:focus {
+    transition: all 5000s ease-in-out 0s;
     -webkit-text-fill-color: currentColor;
-    -webkit-box-shadow: 0 0 0px 1000px var(--second-body-color) inset;
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  }
+  &:focus {
+    outline: none;
+    border-bottom: 2px solid #2e2520;
+
+    &::placeholder {
+      --placeholder-color: #876655;
+    }
   }
 }
