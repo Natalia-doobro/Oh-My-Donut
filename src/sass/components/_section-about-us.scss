@@ -26,6 +26,9 @@
   @media screen and (max-width: $mobile-max) {
     margin-top: -18px;
   }
+  @media screen and (min-width: $desktop) {
+    padding-top: 400px;
+  }
 }
 
 .about-us__img {
