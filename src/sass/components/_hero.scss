@@ -61,31 +61,3 @@
     margin-bottom: 52px;
   }
 }
-
-.hero__img-donuts {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-
-  @media screen and (min-width: $tablet) {
-    left: auto;
-    right: 137px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    left: auto;
-    right: 0;
-  }
-}
-
-.hero__img-spoon {
-  position: absolute;
-  top: 166px;
-  left: 0;
-  z-index: -1;
-
-  @media screen and (max-width: 1279.9px) {
-    display: none;
-  }
-}

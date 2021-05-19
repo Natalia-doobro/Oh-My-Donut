@@ -14,9 +14,7 @@
 @import './components/container';
 @import './components/section';
 @import './components/socials';
-
-
-
+@import './components/fon';
 
 /*стили для основной части*/
 /*шапка*/
@@ -30,15 +28,15 @@
 /*уникальный контент страницы*/
 @import './components/hero';
 @import './layout/section-about-us';
+@import './layout/section-program';
 @import './layouts/reviews';
-@import './components/section-program';
 @import './components/registration';
 @import './components/form-registration';
 @import './components/validator-form';
-
 /*==============================*/
 
 /*подвал*/
 @import './components/form';
 @import './components/contact';
+@import './components/footer';
 /*==============================*/
