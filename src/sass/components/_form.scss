@@ -15,7 +15,15 @@
     width: 410px;
     height: 22px;
   }
+
   @media screen and (min-width: $desktop) {
     width: 430px;
+  }
+
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus {
+    -webkit-text-fill-color: currentColor;
+    -webkit-box-shadow: 0 0 0px 1000px var(--second-body-color) inset;
   }
 }

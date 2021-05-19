@@ -26,17 +26,10 @@
   z-index: -1;
   background-position: right bottom;
   background-repeat: no-repeat;
-  background-image: url(../images/footer/wheatflour-mobile.png);
-  @media screen and (max-width: $tablet),
-    (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../images/footer/wheatflour-tablet@2x.png);
-  }
 
-  @media screen and (min-width: $tablet) {
-    background-image: url(../images/footer/wheatflour-tablet.png);
+  @media screen and (max-width: $mobile-max) {
+    background-image: url(../images/footer/wheatflour-mobile.png);
+    background-size: 87px 72px;
 
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
@@ -46,8 +39,21 @@
     }
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $tablet) {
+    background-image: url(../images/footer/wheatflour-tablet.png);
+    background-size: 147px 144px;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/footer/wheatflour-tablet@2x.png);
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
     background-image: url(../images/footer/wheatflour-desktop.png);
+    background-size: 318px 189px;
 
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
