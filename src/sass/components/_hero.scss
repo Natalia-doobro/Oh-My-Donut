@@ -3,17 +3,17 @@
   text-align: center;
   z-index: 5;
   padding-top: 85px;
-  padding-bottom: 20px;
+  padding-bottom: 0;
 
   @media screen and (min-width: $tablet) {
     text-align: left;
     padding-top: 80px;
-    padding-bottom: 80px;
+    padding-bottom: 60px;
   }
 
   @media screen and (min-width: $desktop) {
     padding-top: 160px;
-    padding-bottom: 125px;
+    padding-bottom: 145px;
   }
 }
 

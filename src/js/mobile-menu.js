@@ -11,21 +11,21 @@
 
   const menuBtnClose1 = document.querySelector('[menu-close-link1]');
   menuBtnClose1.addEventListener('click', () => {
-    menuBtnClose1.classList.remove('is-open');
+    menuBtnRef.classList.remove('is-open');
     mobileMenuRef.classList.remove('is-open');
     document.body.classList.remove('menu-open');
   });
 
   const menuBtnClose2 = document.querySelector('[menu-close-link2]');
   menuBtnClose2.addEventListener('click', () => {
-    menuBtnClose2.classList.remove('is-open');
+    menuBtnRef.classList.remove('is-open');
     mobileMenuRef.classList.remove('is-open');
     document.body.classList.remove('menu-open');
   });
 
   const menuBtnClose3 = document.querySelector('[menu-close-link3]');
   menuBtnClose3.addEventListener('click', () => {
-    menuBtnClose3.classList.remove('is-open');
+    menuBtnRef.classList.remove('is-open');
     mobileMenuRef.classList.remove('is-open');
     document.body.classList.remove('menu-open');
   });
