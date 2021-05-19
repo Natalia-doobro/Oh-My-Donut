@@ -3,14 +3,14 @@
   padding-bottom: 25px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tablet) {
   .container--position {
     display: flex;
     justify-content: space-between;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tablet) {
   .container__item {
     width: 50%;
   }
@@ -20,7 +20,7 @@
 .program__item {
   margin-bottom: 10px;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     margin-bottom: 15px;
   }
 }
@@ -55,21 +55,25 @@
   }
 }
 
-.backdrop.is-hidden {
-  display: none;
-  opacity: 0;
-  pointer-events: none;
+.backdrop {
+  @media screen and (max-width: $desktop) {
+    &.is-hidden {
+      display: none;
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
 }
 
 .servises__list {
   display: flex;
   flex-wrap: wrap;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-left: 27px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     margin-left: 40px;
   }
 }
@@ -86,12 +90,12 @@
 }
 
 .servises__card {
-  @media screen and (min-width: 320px) {
+  @media screen and (min-width: $mobile) {
     width: 135px;
     height: 135px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     width: 175px;
     height: 175px;
   }
@@ -114,7 +118,7 @@
   margin-bottom: 30px;
   margin-left: 20px;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     top: 55px;
   }
 }
@@ -139,7 +143,7 @@
   font-size: 18px;
   line-height: 1.28;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     font-size: 24px;
   }
 }
@@ -153,7 +157,7 @@
 .servises__text {
   margin-bottom: 13px;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     margin-bottom: 16px;
   }
 }
