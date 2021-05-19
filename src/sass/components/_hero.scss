@@ -3,7 +3,7 @@
   text-align: center;
   z-index: 5;
   padding-top: 85px;
-  padding-bottom: 0;
+  padding-bottom: 10px;
 
   @media screen and (min-width: $tablet) {
     text-align: left;
@@ -13,7 +13,7 @@
 
   @media screen and (min-width: $desktop) {
     padding-top: 160px;
-    padding-bottom: 145px;
+    padding-bottom: 245px;
   }
 }
 

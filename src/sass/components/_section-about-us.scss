@@ -1,9 +1,9 @@
 .about-us__section {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 
   @media screen and (max-width: $mobile-max) {
-    padding-top: 0px;
+    padding-top: 0;
   }
 }
 
@@ -24,7 +24,7 @@
   position: relative;
 
   @media screen and (max-width: $mobile-max) {
-    margin-top: -18px;
+    margin-top: 0;
   }
 }
 
@@ -41,7 +41,7 @@
     position: absolute;
     width: 512px;
     height: 547px;
-    bottom: -10px;
+    bottom: -20px;
     right: 65px;
   }
 }
