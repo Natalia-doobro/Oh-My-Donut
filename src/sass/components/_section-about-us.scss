@@ -1,10 +1,51 @@
-.section__about-us {
-  @media screen and (min-width: 768px) {
-    display: flex;
-    justify-content: center;
-    text-align: center;
+.about-us__section {
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  @media screen and (max-width: $mobile-max) {
+    padding-top: 0px;
   }
 }
+
+.about-us__container {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.about-us__item {
+  @media screen and (min-width: $tablet) {
+    width: 50%;
+  }
+}
+
+.about-us__item--img {
+  position: relative;
+
+  @media screen and (max-width: $mobile-max) {
+    margin-top: -18px;
+  }
+}
+
+.about-us__img {
+  @media screen and (min-width: $tablet) and (max-width: $tablet-max) {
+    position: absolute;
+    width: 330px;
+    height: 352px;
+    top: 0;
+    right: 30px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    position: absolute;
+    width: 512px;
+    height: 547px;
+    bottom: -10px;
+    right: 65px;
+  }
+}
+
 .button--border {
   color: var(--button-bg-color);
   background-color: var(--body-color);
@@ -19,45 +60,20 @@
     transform: translate (10px, 20px);
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     display: none;
   }
 }
+
 .about-us__title {
   text-align: center;
-  justify-content: center;
-  @media screen and (min-width: 768px) {
-    text-align: left;
+
+  @media screen and (min-width: $tablet) {
+    display: inline-block;
   }
 }
 
 .about-us__text {
   margin-top: 15px;
   margin-bottom: 15px;
-}
-
-.about-us__descriptions {
-  @media screen and (max-width: 767.9px) {
-    max-width: 290px;
-  }
-  @media screen and (min-width: 768px) {
-    max-width: 690x;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  @media screen and (min-width: 1200px) {
-    max-width: 1017px;
-  }
-}
-.about-us__foto {
-  @media screen and (min-width: 768px) {
-    margin-right: 25px;
-    min-width: 330px;
-  }
-  @media screen and (min-width: 1280px) {
-    margin-right: 76px;
-    min-width: 512px;
-  }
 }
