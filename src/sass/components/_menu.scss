@@ -72,11 +72,12 @@ body.menu-open {
   &:hover,
   &:focus {
     color: var(--button-bg-color);
-    background-color: var(--second-body-color);
+    background-color: none;
   }
 
   &:active {
     color: var(--button-accent-color);
+    background-color: none;
   }
 }
 

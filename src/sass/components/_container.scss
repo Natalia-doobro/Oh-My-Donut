@@ -9,14 +9,10 @@
   }
 
   @media screen and (min-width: $tablet) {
-    width: 768px;
-    padding-right: 67px;
-    padding-left: 67px;
+    width: 664px;
   }
 
   @media screen and (min-width: $desktop) {
-    width: 1280px;
-    padding-right: 229px;
-    padding-left: 229px;
+    width: 852px;
   }
 }

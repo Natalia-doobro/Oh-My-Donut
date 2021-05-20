@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
     <title>Oh My Donut</title>
 
     <!--нормалізатор -->
@@ -14,15 +15,17 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
+  <body class="modal-open">
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-    <div class="bg bg__hero-about">
-      <!--Секцыя Header-->
-      <include src="./partials/header.html"></include>
-      <!--Секцыя  Hero-->
-      <include src="./partials/hero.html"></include>
-      <!--Секцыя  About us-->
-      <include src="./partials/about-us.html"></include>
+    <div class="bg">
+      <div class="bg__hero-about">
+        <!--Секцыя Header-->
+        <include src="./partials/header.html"></include>
+        <!--Секцыя  Hero-->
+        <include src="./partials/hero.html"></include>
+        <!--Секцыя  About us-->
+        <include src="./partials/about-us.html"></include>
+      </div>
     </div>
     <!--Секцыя Program-->
     <include src="./partials/program.html"></include>
@@ -42,8 +45,11 @@
     </div>
 
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./index.js"></script>
     <script src="./js/mobile-menu.js"></script>
-    <script src="./js/modal.js"></script>
+    <script src="./js/bt.js"></script>
+    <script src="./js/button.js"></script>
+    <script src="./js/smooth-scroll.js"></script>
   </body>
 </html>

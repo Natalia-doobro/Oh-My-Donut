@@ -1,13 +1,3 @@
-.adress {
-  display: flex;
-  justify-content: space-between;
-}
-
-.socials__list {
-  margin-bottom: 34px;
-  justify-content: center;
-}
-
 .footer-section {
   padding-bottom: 20px;
   padding-top: 20px;
@@ -16,69 +6,70 @@
 .socials__list--footer {
   display: flex;
   justify-content: center;
+  margin-bottom: 34px;
 }
 
 // .footer__section {
 //   position: relative;
 // }
 
+.adress {
+  display: flex;
+  justify-content: space-between;
+}
+.adress__link {
+  transition: color, background-color var(--animation-duration);
+
+  &:hover,
+  &:focus {
+    fill: var(--button-bg-color);
+    color: var(--button-bg-color);
+    background-color: none;
+  }
+
+  &:active {
+    fill: var(--button-bg-color);
+    color: var(--button-accent-color);
+  }
+}
 .footer__picture {
   z-index: -1;
   background-position: right bottom;
   background-repeat: no-repeat;
 
   @media screen and (max-width: $mobile-max) {
-    background-image: url(../images/footer/wheatflour-mobile.png);
+    background-image: url('../images/footer/wheatflour-mobile.png');
     background-size: 87px 72px;
 
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/footer/wheatflour-tablet@2x.png);
+      background-image: url('../images/footer/wheatflour-tablet@2x.png');
     }
   }
 
   @media screen and (min-width: $tablet) {
-    background-image: url(../images/footer/wheatflour-tablet.png);
+    background-image: url('../images/footer/wheatflour-tablet.png');
     background-size: 147px 144px;
 
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/footer/wheatflour-tablet@2x.png);
+      background-image: url('../images/footer/wheatflour-tablet@2x.png');
     }
   }
 
   @media screen and (min-width: $desktop) {
-    background-image: url(../images/footer/wheatflour-desktop.png);
+    background-image: url('../images/footer/wheatflour-desktop.png');
     background-size: 318px 189px;
 
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/footer/wheatflour-desktop@2x.png);
+      background-image: url('../images/footer/wheatflour-desktop@2x.png');
     }
   }
 }
-
-// @media (min-device-pixel-ratio: 2),
-//   (-webkit-min-device-pixel-ratio: 2),
-//   (min-resolution: 192dpi),
-//   (min-resolution: 2dppx) {
-//   .footer__picture {
-//     background-image: url(../images/footer/wheatflour-desktop@2x.png);
-//   }
-// }
-// @media (min-device-pixel-ratio: 2),
-//   (-webkit-min-device-pixel-ratio: 2),
-//   (min-resolution: 192dpi),
-//   (min-resolution: 2dppx) {
-//   .footer__picture {
-//     background-image: url(../images/footer/wheatflour-desktop@2x.png);
-//   }
-// }
-// url(../images/footer/wheatflour-tablet@2x.png);
-// url(../images/footer/wheatflour-mobile@2x.png)
