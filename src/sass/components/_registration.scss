@@ -31,12 +31,15 @@
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    max-width: 822px;
+    max-width: 670px;
     padding: 35px 0px;
     background: var(--second-body-color);
     box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
     border-radius: 150px;
     z-index: 2;
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: 822px;
   }
 }
 
@@ -101,7 +104,7 @@
     background-image: url('../images/images-registration/donut-chocolate.png');
     background-size: 256.68px 254px;
     background-repeat: no-repeat;
-    background-position: -25px 80px;
+    background-position: -25px 60px;
   }
   @media screen and (min-width: $desktop) {
     z-index: 1;
