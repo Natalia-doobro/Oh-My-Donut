@@ -4,6 +4,7 @@
 
   @media screen and (max-width: $mobile-max) {
     padding-top: 0px;
+    padding-bottom: 0px;
   }
 }
 
@@ -11,6 +12,9 @@
   @media screen and (min-width: $tablet) {
     display: flex;
     justify-content: space-between;
+  }
+  @media screen and (min-width: $desktop) {
+    height: 440px;
   }
 }
 
@@ -25,9 +29,6 @@
 
   @media screen and (max-width: $mobile-max) {
     margin-top: -18px;
-  }
-  @media screen and (min-width: $desktop) {
-    padding-top: 400px;
   }
 }
 
@@ -78,7 +79,6 @@
   @media screen and (min-width: $tablet) {
     display: inline-block;
   }
-  
 }
 
 .about-us__text {
