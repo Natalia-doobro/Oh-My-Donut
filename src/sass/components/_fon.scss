@@ -1,9 +1,7 @@
 .bg {
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
 
   @media screen and (max-width: $mobile-max) {
-    max-width: 100%;
     z-index: 1;
     background-image: url('../images/fon/mobile/bg-mobile.png');
     background-size: 100% 460.5px;
@@ -19,7 +17,6 @@
   }
 
   @media screen and (min-width: $tablet) and (max-width: $tablet-max) {
-    max-width: 100%;
     z-index: 1;
     background-image: url('../images/fon/tablet/bg-tablet.png');
     background-size: 100% 622px;
@@ -52,11 +49,9 @@
 }
 
 .background-fon {
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
 
   @media screen and (max-width: $mobile-max) {
-    max-width: 100%;
     z-index: 1;
     background-image: url('../images/fon/mobile/background-mobile.png');
     background-size: 100% 1300px;
@@ -72,7 +67,6 @@
   }
 
   @media screen and (min-width: $tablet) and (max-width: $tablet-max) {
-    max-width: 100%;
     z-index: 1;
     background-image: url('../images/fon/tablet/background-tablet.png');
     background-size: 100% 1300px;
@@ -88,6 +82,7 @@
   }
 
   @media screen and (min-width: $desktop) {
+
     max-width: 100%;
     z-index: 1;
     background-image: url('../images/fon/desktop/background-desktop.png');
@@ -105,11 +100,9 @@
 }
 
 .bg__hero-about {
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
 
   @media screen and (max-width: $mobile-max) {
-    max-width: $mobile;
     z-index: 2;
     background-image: url('../images/header/mobile/donuts_mobile.png');
     background-size: 120px 114px;
@@ -126,6 +119,8 @@
 
   @media screen and (min-width: $tablet) and (max-width: $tablet-max) {
     width: $tablet;
+    margin-left: auto;
+    margin-right: auto;
     z-index: 2;
     background-image: url('../images/header/tablet/donuts_tablet.png');
     background-size: 380px 361px;
@@ -141,7 +136,6 @@
   }
 
   @media screen and (min-width: $desktop) {
-    width: $desktop;
     z-index: 2;
     background-image: url('../images/header/desktop/donuts_desktop.png'),
       url('../images/header/desktop/spoon_desktop.png');
