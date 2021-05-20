@@ -2,14 +2,14 @@
   padding-bottom: 30px;
 
   @media screen and (min-width: $tablet) {
-    padding-right: 73px;
-    padding-left: 73px;
+    padding-right: 0px;
+    padding-left: 0px;
     min-height: 495px;
   }
 
   @media screen and (min-width: $desktop) {
-    padding-right: 329px;
-    padding-left: 329px;
+    padding-right: 115px;
+    padding-left: 115px;
     padding-bottom: 17px;
     min-height: 577px;
   }
