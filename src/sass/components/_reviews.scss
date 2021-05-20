@@ -86,10 +86,27 @@
 }
 
 .reviews__img {
+  width: 110px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 6px;
   border-radius: 50%;
+
+  @media screen and (min-width: $tablet) {
+    width: 110px;
+
+    &--active {
+      width: 186px;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 136px;
+
+    &--active {
+      width: 234px;
+    }
+  }
 }
 
 .reviews__icon {
