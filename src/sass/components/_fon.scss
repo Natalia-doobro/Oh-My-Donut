@@ -35,10 +35,10 @@
   }
 
   @media screen and (min-width: $desktop) {
-    max-width: $desktop;
+    max-width: 100%;
     z-index: 1;
     background-image: url('../images/fon/desktop/bg-desktop.png');
-    background-size: 1280px 1035.5px;
+    background-size: 100% 1050px;
     background-repeat: no-repeat;
     background-position: top;
 
@@ -75,7 +75,7 @@
     max-width: 100%;
     z-index: 1;
     background-image: url('../images/fon/tablet/background-tablet.png');
-    background-size: 100% 1450px;
+    background-size: 100% 1300px;
     background-repeat: no-repeat;
     background-position: top left;
 
@@ -88,10 +88,10 @@
   }
 
   @media screen and (min-width: $desktop) {
-    max-width: $desktop;
+    max-width: 100%;
     z-index: 1;
     background-image: url('../images/fon/desktop/background-desktop.png');
-    background-size: 1280px 1600px;
+    background-size: 100% 1500px;
     background-repeat: no-repeat;
     background-position: top left;
 
